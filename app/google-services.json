@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "598466842451",
+    "project_id": "celfiechat-4a892",
+    "storage_bucket": "celfiechat-4a892.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598466842451:android:e2fba531d8ef817d1bdba6",
+        "android_client_info": {
+          "package_name": "com.kiran.celfiechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598466842451-j23dhnjprmpp87918n46bdm16nav3nu1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kiran.celfiechat",
+            "certificate_hash": "c60c44fc2529848b81aa28755082e54c98d9b445"
+          }
+        },
+        {
+          "client_id": "598466842451-4dn11jgdbp45co30opvk485dotnmujol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Lahi-xi35hAWXdhuJfB4Tcl8mnbWRyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598466842451-4dn11jgdbp45co30opvk485dotnmujol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

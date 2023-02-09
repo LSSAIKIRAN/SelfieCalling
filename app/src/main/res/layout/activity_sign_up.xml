@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".signUpActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random celfie calling ...!"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_27font_mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="cursive"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celfiechat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30font_mdp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_80mdp"
+            android:fontFamily="serif-monospace"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login here to continue"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_90mdp"
+            />
+
+
+
+    <LinearLayout
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:background="@drawable/white_bg"
+        android:padding="@dimen/_6mdp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/google"
+            android:drawablePadding="@dimen/_16mdp"
+            android:text="SignIn with Google"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_8mdp"
+            android:textSize="@dimen/_15font_mdp"
+            android:paddingLeft="@dimen/_16mdp"
+            android:paddingRight="@dimen/_25mdp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:text="By Agreeing you our Terms &amp; Privacy policy.!"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_6mdp"/>
+
+
+
+</LinearLayout>

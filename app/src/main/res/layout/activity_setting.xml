@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30mdp"
+        android:layout_marginStart="@dimen/_25mdp"
+        android:orientation="vertical">
+
+       <LinearLayout
+           android:id="@+id/share"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="@dimen/_15mdp"
+           >
+
+           <ImageView
+               android:layout_width="@dimen/_25mdp"
+               android:layout_height="@dimen/_25mdp"
+               android:src="@drawable/share"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Share"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:textSize="@dimen/_15font_mdp"
+               android:layout_gravity="center_vertical"
+               android:layout_marginStart="@dimen/_10mdp"/>
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15mdp"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_25mdp"
+                android:layout_height="@dimen/_25mdp"
+                android:src="@drawable/logout"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15font_mdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10mdp"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

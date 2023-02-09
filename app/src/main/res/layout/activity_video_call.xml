@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_12mdp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/user_bg"
+        android:padding="@dimen/_5mdp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_40mdp"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="@dimen/_2mdp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5mdp"
+            android:layout_marginEnd="@dimen/_8mdp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LS Saikiran"
+                android:textSize="@dimen/_13font_mdp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bangalore,India"
+                android:textSize="@dimen/_10font_mdp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/controls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40mdp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/video"
+            android:layout_width="@dimen/_45mdp"
+            android:layout_height="@dimen/_45mdp"
+            android:src="@drawable/videocall"
+            android:layout_marginEnd="@dimen/_15mdp"/>
+
+        <ImageView
+            android:id="@+id/voice"
+            android:layout_width="@dimen/_45mdp"
+            android:layout_height="@dimen/_45mdp"
+            android:src="@drawable/unmute"
+            android:layout_marginEnd="@dimen/_15mdp"/>
+
+        <ImageView
+            android:id="@+id/callend"
+            android:layout_width="@dimen/_47mdp"
+            android:layout_height="@dimen/_47mdp"
+            android:src="@drawable/btn_endcall"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/loadingGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_blur"/>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/connecting"/>
+    </FrameLayout>
+
+
+
+</RelativeLayout>

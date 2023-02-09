@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blur"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_16mdp"
+            android:fontFamily="cursive"
+            android:text="Celfiechat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30font_mdp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="@dimen/_200mdp"
+                android:layout_height="@dimen/_200mdp"
+                android:layout_gravity="center_horizontal"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/radar" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileImage"
+                android:layout_width="@dimen/_65mdp"
+                android:layout_height="@dimen/_65mdp"
+                android:layout_gravity="center"
+                android:src="@drawable/user"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="@dimen/_2mdp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_34font_mdp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10mdp"
+            android:fontFamily="cursive"
+            android:text="Talk with random friends who are looking for you..."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13font_mdp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35mdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_30mdp"
+            android:layout_marginRight="@dimen/_30mdp"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15font_mdp"
+            android:text="Search"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="@dimen/_35mdp"
+        android:layout_height="@dimen/_35mdp"
+        android:src="@drawable/settings"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_10mdp"
+        android:layout_marginRight="@dimen/_5mdp"/>
+
+
+</RelativeLayout>
